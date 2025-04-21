@@ -1,0 +1,6 @@
+1，需要定义宏 NOMINMAX
+2,  #if defined(_MSC_VER)
+    #include <BaseTsd.h>
+    typedef SSIZE_T ssize_t;
+    #endif
+3,   int windowProc(unsigned int msg, WPARAM wParam, LPARAM lParam); 64 位需要改成这
